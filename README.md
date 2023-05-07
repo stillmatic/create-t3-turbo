@@ -18,6 +18,9 @@ This is an extended version of [create-t3-turbo](https://github.com/t3-oss/creat
 **iOS:** One of the requirements for Apple's review process requires you to implement native `Sign in with Apple` if you're providing any other third party authentication method. Read more in [Section 4.8 - Design: Sign in with Apple](https://developer.apple.com/app-store/review/guidelines/#sign-in-with-apple).
 
 We have preconfigured this for you which you can find [here](./apps/expo/src/utils/auth.ts). All you need to do is to enable the Apple Provider in your [Supabase dashboard](https://app.supabase.com) and fill in your information.
+> In this template, we use `@acme` as a placeholder for package names. As a user, you might want to replace it with your own organization or project name. You can use find-and-replace to change all the instances of `@acme/` to something like `@my-company/` / `@project-name/`.
+
+## FAQ
 
 > We currently only supports `Sign in with Apple` - support for more providers on mobile are being worked on!
 ### Can you include Solito?
