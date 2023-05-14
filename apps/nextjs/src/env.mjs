@@ -27,5 +27,5 @@ export const env = createEnv({
     NEXT_PUBLIC_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
-  skipValidation: !!process.env.CI,
+  skipValidation: !!process.env.CI || !!process.env.SKIP_ENV_VALIDATION,
 });
